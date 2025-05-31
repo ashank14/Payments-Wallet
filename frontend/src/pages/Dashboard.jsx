@@ -52,7 +52,7 @@ function Dashboard(){
                 <div className="text-2xl font-bold">Users:</div>
                 <div>
                     {users.map(user => (
-                        <User key={user._id} username={user.username} firstname={user.firstname} lastname={user.lastname} userId={user._id}/>
+                        <User key={user._id} username={user.username} firstname={user.firstname} lastname={user.lastname} userId={user._id} />
                     ))}
                 </div>
             </div>

@@ -22,7 +22,7 @@ function Signin(){
                 </div>
                 <div className="flex flex-col w-full">
                     <p className="font-bold">Password</p>
-                    <input className="border border-slate-500 rounded-md h-12" placeholder="Password"onChange={e=>{
+                    <input className="border border-slate-500 rounded-md h-12" placeholder="Password" type="password" onChange={e=>{
                         setPassword(e.target.value);
                         console.log(e.target.value);
                     }}/>

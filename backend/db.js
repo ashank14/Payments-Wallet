@@ -1,7 +1,8 @@
 const mongoose=require('mongoose');//import mongoose
 
-mongoose.connect('mongodb+srv://ashank:ashank1@cluster0.daydhtz.mongodb.net/paytm?authMechanism=SCRAM-SHA-1');//connect to db
-
+mongoose.connect('mongodb+srv://ashank:Qwerty@cluster0.daydhtz.mongodb.net/paytm?authMechanism=SCRAM-SHA-1')
+  .then(() => console.log("MongoDB Connected"))
+  .catch(err => console.error("MongoDB Error:", err));
 const userschema=new mongoose.Schema({
     username:{
         type:String,
@@ -51,3 +52,6 @@ module.exports={
     User,
     Balance
 };
+
+
+
